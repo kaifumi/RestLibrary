@@ -9,6 +9,7 @@
       android:id="@+id/FirstFragment"
       android:name="com.kaifumi.restlibrary.FirstFragment"
       android:label="@string/first_fragment_label"
+      android:textColor="@color/white"
       tools:layout="@layout/fragment_first">
 
     <action
