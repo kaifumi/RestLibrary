@@ -9,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.kaifumi.restlibrary.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -56,4 +57,19 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        when (item.itemId) {
+            R.id.navigation_tundoku -> {
+//                message.setText(R.string.title_home)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_dokuryo -> {
+//                message.setText(R.string.title_dashboard)
+                return@OnNavigationItemSelectedListener true
+            }
+        }
+        false
+    }
+
 }

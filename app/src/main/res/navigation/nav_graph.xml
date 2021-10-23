@@ -8,8 +8,7 @@
   <fragment
       android:id="@+id/FirstFragment"
       android:name="com.kaifumi.restlibrary.FirstFragment"
-      android:label="@string/first_fragment_label"
-      android:textColor="@color/white"
+      android:label="@string/label_tundoku_list"
       tools:layout="@layout/fragment_first">
 
     <action
@@ -19,7 +18,7 @@
   <fragment
       android:id="@+id/SecondFragment"
       android:name="com.kaifumi.restlibrary.SecondFragment"
-      android:label="@string/second_fragment_label"
+      android:label="@string/label_dokuryo_list"
       tools:layout="@layout/fragment_second">
 
     <action
