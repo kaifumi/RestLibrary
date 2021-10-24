@@ -3,9 +3,9 @@
   <item
       android:id="@+id/navigation_tundoku"
       android:icon="@android:drawable/ic_menu_add"
-      android:title="add" />
+      android:title="積読リスト" />
   <item
       android:id="@+id/navigation_dokuryo"
       android:icon="@android:drawable/ic_menu_delete"
-      android:title="delete" />
+      android:title="読了リスト" />
 </menu>

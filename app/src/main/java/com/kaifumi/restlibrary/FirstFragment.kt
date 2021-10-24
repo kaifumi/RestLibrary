@@ -1,10 +1,10 @@
 package com.kaifumi.restlibrary
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.kaifumi.restlibrary.databinding.FragmentFirstBinding
 
@@ -18,6 +18,12 @@ class FirstFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    companion object {
+        fun newInstance(): FirstFragment {
+            return FirstFragment()
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
